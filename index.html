@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio-01-v2</title>
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/44a557b0a3.js" crossorigin="anonymous"></script>
+
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  
+    <!-- Fonts Goole -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body class="grid-container">
+
+    <nav class="nav-grid home-nav">
+        <ul class="home-nav-lista">
+            <li>
+                <a class="links links-primarios" href="index.html"><i class="fa-solid fa-house-chimney iconos-nav-bar"></i>Home</a>
+            </li>
+    
+            <li>
+                <a class="links links-primarios" href="pages/help.html"><i class="fa-solid fa-question iconos-nav-bar"></i>Help</a>
+            </li>
+            
+            <li>
+                <a class="links links-primarios" href="pages/search.html"><i class="fa-solid fa-magnifying-glass iconos-nav-bar" ></i>Search</a>
+            </li>
+            
+            <div class="login-register">
+                <li>
+                    <a class="links links-primarios" href="pages/login.html"><i class="fa-solid fa-right-to-bracket iconos-nav-bar"></i>Login</a>
+                </li>
+        
+                <li>
+                    <a class="links links-primarios" href="pages/register.html"><i class="fa-solid fa-address-card iconos-nav-bar"></i>Register</a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+
+    <header class="header-grid">
+        
+        <h1 class="index-title" data-aos="flip-right">DevelopHub</h1>
+
+        <div data-aos="zoom-in">   
+            <table class="tabla-header">
+                <thead>
+                    <tr>
+                        <th>
+                            <a class="links links-secundarios" href="pages/general-rules.html"><h2 style="padding-left: 120px;">Forum Rules</h2></a> 
+                        </th> 
+                     </tr>
+                </thead>
+                         
+                <tbody>
+                    <tr class="header-data">
+                        <td>Online Users: 389</td>
+                        <td>Staff Online: 16</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </header>
+    
+    <main class="main-grid main-index">
+            <table>
+                <thead>
+                    <tr>
+                        <Th><h2 class="main-titulo"><img src="img/kGgYr.png" alt="icono-coding" class="icono-coding"> Coding</h2></Th>
+                    </tr>
+                </thead>
+                
+                <tbody class="main-contenido">
+                    <tr class="prueba-tabla">
+                        <td><h3 class="prueba-tabla"><img src="img/icono 2.png" alt="icono-coding" class="icono-coding-secundario">Programming Discussions</h3><br><span class="descripcion-subforos prueba-tabla">Let's Talk Programming</span></td>
+                    </tr>
+
+                    <tr class="prueba-tabla">
+                        <td><h3 class="prueba-tabla"><img src="img/kGgYr.png" alt="icono-coding" class="icono-coding-terciario">Web Programming</h3><br><span class="descripcion-subforos prueba-tabla">Html, Css. Js, PHP & Webdev's, assemble here. Gotta love a good source code unit</span></td>
+                    </tr>
+
+                    <tr class="prueba-tabla">
+                        <td><h3 class="prueba-tabla"><img src="img/icono 2.png" alt="icono-coding" class="icono-coding-secundario">Java</h3><br><span class="descripcion-subforos">The #1 programming language and development platform</span></td>
+                    </tr>
+
+                    <tr class="prueba-tabla">
+                        <td><h3 class="prueba-tabla"><img src="img/kGgYr.png" alt="icono-coding" class="icono-coding-terciario">Python</h3><br><span class="descripcion-subforos">Python is a popular programming language, Python can be used on a server to create web applications</span></td>
+                    </tr>
+
+                    <tr class="prueba-tabla">
+                        <td><h3 class="prueba-tabla"><img src="img/icono 2.png" alt="icono-coding" class="icono-coding-secundario">Other Languages</h3><br><span class="descripcion-subforos">Know more, we are smarth people :)</span></td>
+                    </tr>
+                </tbody>
+            </table>
+    </main>
+
+    <aside class="aside-grid">
+            <table class="tabla-perfil">
+                <tbody>
+                    <tr>
+                        <td class="user-photo">
+                            <img src="https://dummyimage.com/50x50/000/fff" alt="profile-photo"><span class="perfil">Your User</span>
+                        </td>
+                    </tr>
+
+                    <tr class="perfil-caracteristicas">
+                        <td><span class="numero-reputacion">+13</span><br><span class="reputacion">Reputation</span></td>
+
+                        <td><span class="numero-likes">20</span><br><span class="reputacion">Likes</span></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="anuncios">
+                            <h3 id="titulo-anuncios">Announcements</h3>
+                            <div class="admin-annoucenments">
+                                <p>Admin: The page is being developed, access to everyone <span style="color: red;">SOON</span></p>
+                                <p>Admin: The team (Me) <span style="color: aqua;">"finished the html" for now...</span> and we started working in the CSS</p>
+                                <p>Admin: We started to work in this page the <span style="color: #ff637d;">22/03/2022</span></p>
+                                <p>Admin: Great News!. We already started to work with grid and flexbox and adding responsive</p>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </aside>
+
+    <footer class="footer-grid">
+
+        <div class="navegacion-footer">
+
+            <div class="about-us">
+                <h3 class="titulo-footer-aboutUs">About Us</h3>
+                <br><p class="texto-footer-aboutUs">This a page made and for coders, where u can learn everything <br> about the intire word of coding 
+                    is a community that suit basically everyone.<br>You can also learn many things here, meet new friends and have a lot of fun!
+                </p>
+            </div>
+            
+            <div class="flex-listas-nav">
+                <div>
+                    <h3>Navigation</h3>
+                    <ul class="footer-list">
+                        <li>
+                            <a class="links links-secundarios" href="#"><i class="fa-solid fa-clipboard-user iconos-nav-bar"></i> Staff</a>
+                        </li>
+            
+                        <li>
+                            <a class="links links-secundarios" href="#"><i class="fa-solid fa-address-book iconos-nav-bar"></i>Member List</a>
+                        </li>
+            
+                        <li>
+                            <a class="links links-secundarios" href="pages/search.html"><i class="fa-solid fa-magnifying-glass iconos-nav-bar" ></i>Search</a>
+                        </li>
+                    </ul>
+                </div>
+                
+        
+                <div>
+                    <h3>Account</h3>
+                    <ul class="footer-list">
+                        <li>
+                            <a class="links links-secundarios" href="#"><i class="fa-solid fa-id-badge iconos-nav-bar"></i>Control Panel</a>
+                        </li>
+            
+                        <li>
+                            <a class="links links-secundarios" href="#"><i class="fa-solid fa-thumbs-up iconos-nav-bar"></i>Likes</a>
+                        </li>
+            
+                        <li>
+                            <a class="links links-secundarios" href="#"><i class="fa-solid fa-plus iconos-nav-bar"></i>Reputation</a>
+                        </li>
+                    </ul>
+                </div>
+                
+        
+                <div>
+                    <h3>Help</h3>
+                    <ul class="footer-list">
+                        <li>
+                            <a class="links links-secundarios" href="#"><i class="fa-solid fa-bullhorn iconos-nav-bar"></i>Announcements</a>
+                        </li>
+            
+                        <li>
+                            <a class="links links-secundarios" href="pages/help.html"><i class="fa-solid fa-book iconos-nav-bar"></i>Help Documents</a>
+                        </li>
+            
+                        <li>
+                            <a class="links links-secundarios" href="https://www.instagram.com/mendoza_13g/" target="_blank"> <i class="fa-brands fa-instagram iconos-nav-bar"></i>Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
