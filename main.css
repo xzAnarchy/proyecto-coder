@@ -377,7 +377,9 @@ header {
 .tabla-header {
     display: inline-block;
     border: solid #ffffffbe;
-    border-width: 2px;   
+    border-radius: 10px;
+    border-width: 2px;  
+    padding: 8px; 
 }
 
 .tabla-perfil {
