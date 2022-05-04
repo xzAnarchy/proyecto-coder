@@ -601,7 +601,7 @@ aside {
     justify-content: space-around;
     margin-top: 20px;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
 }
 
 .navegacion-footer li {
