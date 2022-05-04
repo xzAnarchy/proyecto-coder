@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body {
+.body-class-test {
     background-color: #222744 !important;
     color: white !important;
 } 
@@ -281,12 +281,13 @@ aside {
           "header-grid header-grid header-grid"
           "main-grid main-grid aside-grid"
           "footer-grid footer-grid footer-grid";
-      }
-      .nav-grid { grid-area: nav-grid; }
-      .header-grid { grid-area: header-grid; }
-      .main-grid { grid-area: main-grid; }
-      .aside-grid { grid-area: aside-grid; }
-      .footer-grid { grid-area: footer-grid; }
+    }
+
+    .nav-grid { grid-area: nav-grid; }
+    .header-grid { grid-area: header-grid; }
+    .main-grid { grid-area: main-grid; }
+    .aside-grid { grid-area: aside-grid; }
+    .footer-grid { grid-area: footer-grid; }
 
 
 /* Inicio Css Nav */
