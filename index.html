@@ -28,30 +28,23 @@
 
 <body class="grid-container">
 
-    <nav class="nav-grid home-nav">
-        <ul class="home-nav-lista">
-            <li>
-                <a class="links links-primarios" href="index.html"><i class="fa-solid fa-house-chimney iconos-nav-bar"></i>Home</a>
-            </li>
-    
-            <li>
-                <a class="links links-primarios" href="pages/help.html"><i class="fa-solid fa-question iconos-nav-bar"></i>Help</a>
-            </li>
-            
-            <li>
-                <a class="links links-primarios" href="pages/search.html"><i class="fa-solid fa-magnifying-glass iconos-nav-bar" ></i>Search</a>
-            </li>
-            
-            <div class="login-register">
-                <li>
-                    <a class="links links-primarios" href="pages/login.html"><i class="fa-solid fa-right-to-bracket iconos-nav-bar"></i>Login</a>
-                </li>
-        
-                <li>
-                    <a class="links links-primarios" href="pages/register.html"><i class="fa-solid fa-address-card iconos-nav-bar"></i>Register</a>
-                </li>
+    <nav class="navbar navbar-expand-lg navbar-dark  nav-grid">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">DevelopHub</a>
+          <!-- Boton Responsive -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#"> <i class="fa-solid fa-house-chimney iconos-nav-bar"></i>Home</a>
+              <a class="nav-link" href="pages/search.html"><i class="fa-solid fa-magnifying-glass iconos-nav-bar"></i>Search</a>
+              <a class="nav-link" href="pages/help.html"><i class="fa-solid fa-question iconos-nav-bar"></i>Help</a>
+              <a class="nav-link" href="pages/login.html"><i class="fa-solid fa-right-to-bracket iconos-nav-bar"></i>Login</a>
+              <a class="nav-link" href="pages/register.html"><i class="fa-solid fa-address-card iconos-nav-bar"></i>Register</a>
             </div>
-        </ul>
+          </div>
+        </div>
     </nav>
 
     <header class="header-grid">
@@ -82,7 +75,7 @@
             <table>
                 <thead>
                     <tr>
-                        <Th><h2 class="main-titulo"><img src="img/kGgYr.png" alt="icono-coding" class="icono-coding"> Coding</h2></Th>
+                        <Th><h2 class="main-titulo"><img src="img/kGgYr.png" alt="icono-coding" class="icono-coding">Coding</h2></Th>
                     </tr>
                 </thead>
                 
@@ -133,6 +126,7 @@
                                 <p>Admin: The team (Me) <span style="color: aqua;">"finished the html" for now...</span> and we started working in the CSS</p>
                                 <p>Admin: We started to work in this page the <span style="color: #ff637d;">22/03/2022</span></p>
                                 <p>Admin: Great News!. We already started to work with grid and flexbox and adding responsive</p>
+                                <p>Admin: Already started to work with BoosTrap, adding responsive a beutiful content and new pages!</p>
                             </div>
                         </td>
                     </tr>
@@ -140,18 +134,18 @@
             </table>
     </aside>
 
-    <footer class="footer-grid">
+    <footer class="footer-grid container">
 
-        <div class="navegacion-footer">
+        <div class="navegacion-footer row">
 
-            <div class="about-us">
+            <div class="about-us col-6">
                 <h3 class="titulo-footer-aboutUs">About Us</h3>
                 <br><p class="texto-footer-aboutUs">This a page made and for coders, where u can learn everything <br> about the intire word of coding 
                     is a community that suit basically everyone.<br>You can also learn many things here, meet new friends and have a lot of fun!
                 </p>
             </div>
             
-            <div class="flex-listas-nav">
+            <div class="flex-listas-nav col-5 offset-md-1">
                 <div>
                     <h3>Navigation</h3>
                     <ul class="footer-list">
