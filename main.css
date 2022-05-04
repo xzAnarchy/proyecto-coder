@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-.body-class-test {
+body {
     background-color: #222744 !important;
     color: white !important;
 } 
