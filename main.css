@@ -6,10 +6,9 @@
 }
 
 body {
-    font-family:'Roboto', sans-serif;
-    background: #292929;
-    color: #ffffffc6
- }
+    background-color: #222744 !important;
+    color: white !important;
+} 
 
 .links {
     text-decoration: none;
@@ -17,7 +16,8 @@ body {
     color: #ffffffc6
 }
 
-.grid-container {  display: grid; 
+.grid-container {  
+    display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 0.05fr 0.01fr 1fr 1fr; 
     gap: 0px 0px; 
@@ -26,16 +26,23 @@ body {
       "header-grid header-grid header-grid"
       "main-grid main-grid main-grid"
       "footer-grid footer-grid footer-grid";
-  }
-  .nav-grid { grid-area: nav-grid; }
-  .header-grid { grid-area: header-grid; }
-  .main-grid { grid-area: main-grid; }
-  .footer-grid { grid-area: footer-grid; }
+}
+
+.nav-grid { grid-area: nav-grid; }
+.header-grid { grid-area: header-grid; }
+.main-grid { grid-area: main-grid; }
+.footer-grid { grid-area: footer-grid; }
 
 aside {
     display: none;
 }
+
 /* Inicio Css Nav */
+
+.navbar {
+    width: 100% !important;
+}
+
 .home-nav-lista {
     list-style-type: none;
     display: flex;
@@ -298,7 +305,7 @@ aside {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #403f3f;
+    background-color: #5865B0;
     height: 40px;
     
     border-style: solid;
@@ -316,7 +323,8 @@ aside {
 }
 
 .home-nav-lista:hover li {
-    background: #4c525b;
+    background: #6d7cd38a;
+    border-radius: 10px;
     box-shadow: 0 1px 2.4px #5d636675, 0 2px 6px #5d939d4f, 0 2px 15px #adbfdd66
 }
 
