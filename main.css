@@ -48,6 +48,10 @@ aside {
     background-color: #505ca0;
     width: 100% !important;
 }
+
+.iconos-nav-bar {
+    padding-right: 10px;
+}
 /* Final Css nav */
 
 .index-title {
@@ -288,6 +292,10 @@ aside {
 
 /* Inicio Css Nav */
  
+.navbar-expand-md .navbar-collapse {
+    justify-content: flex-end;
+}
+
 .home-nav {
     position: sticky;
     top: 0px;
