@@ -16,6 +16,11 @@ body {
     color: #ffffffc6
 }
 
+.links-main {
+    text-decoration: none;
+    color: white;
+}
+
 .grid-container {  
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
@@ -42,23 +47,6 @@ aside {
 .navbar {
     background-color: #505ca0;
     width: 100% !important;
-}
-
-.home-nav-lista {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.iconos-nav-bar {
-    padding-right: 10px;
-}
-
-.login-register {
-    padding-left: 15px;
 }
 /* Final Css nav */
 
