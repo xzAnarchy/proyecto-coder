@@ -8,6 +8,9 @@
 body {
     background-color: #222744 !important;
     color: white !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 } 
 
 .links {
@@ -54,6 +57,8 @@ aside {
 }
 /* Final Css nav */
 
+/* Inicio Header */
+
 .index-title {
     display: flex;
     justify-content: center;
@@ -67,6 +72,8 @@ aside {
 .tabla-perfil {
     display: none;
 }
+
+/* Final Header */
 
 /* Inicio CSS MAIN */
 
@@ -106,7 +113,6 @@ aside {
     text-align: center;
 
     padding: 5px;
-    /* Esto en principio era una prueba para ver si el flex me podia resolver un problema  */
 }
 
 .icono-coding {
@@ -222,6 +228,17 @@ aside {
 /* Final Css Help */
 
 /* Inicio css general rules */
+
+.accordion-button {
+    background-color: #505ca0 !important;  
+    color: white !important;
+    font-weight: bold;
+}
+
+
+.accordion-item {
+    background-color: #505ca0 !important;
+}
   
 .list-general-rules {
     display: flex;
@@ -230,6 +247,7 @@ aside {
 }
 
 .list-general-rules ol {
+    margin-left: 25px;
     padding: 22px;
     text-align: center;
     display: flex;
@@ -555,6 +573,10 @@ aside {
  
 /* Inicio Footer */
 
+.footer-grid {
+    margin-top: 30px;
+}
+
 .about-us {
     display: inline-block;
     padding-right: 20px;
@@ -647,7 +669,8 @@ aside {
     justify-content: flex-start;
     margin-top: 20px;
     margin-left: 25px;
-    align-items: center;
+    align-content: space-around;
+    align-items: stretch;
 }   
 
 /* final css search */
@@ -708,7 +731,7 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
    
 .form-login-register {
@@ -730,7 +753,7 @@ aside {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 /* Final CSS Register */
 }
