@@ -1,0 +1,27 @@
+/* Inicio Css Help */
+
+.forum-help-subtitle {
+    text-align: center;
+    margin-left: 20px;
+}
+
+.main-help {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    margin-top: 10px;
+}
+
+.lista-help {
+    text-align: center;
+    margin-top: 15px;
+    padding: 0px 15px;
+    display: flex;
+
+    li {
+        list-style-type: none;
+    }
+}
+
+/* Final Css Help */

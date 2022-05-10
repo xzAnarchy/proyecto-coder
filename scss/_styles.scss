@@ -1,0 +1,53 @@
+/* Estas son las  bases de mi scss */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Variables
+
+$color-primary: white;
+$color-background: #222744;
+$color-background-nav: #505ca0;
+$color-links: #ffffffc6;
+
+body {
+    background-color: $color-background !important;
+    color: $color-primary !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} 
+
+.links {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffffc6
+}
+
+.links-main {
+    text-decoration: none;
+    color: $color-primary;
+}
+
+.grid-container {  
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.05fr 0.01fr 1fr 0.6fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "nav-grid nav-grid nav-grid"
+      "header-grid header-grid header-grid"
+      "main-grid main-grid main-grid"
+      "footer-grid footer-grid footer-grid";
+}
+
+.nav-grid { grid-area: nav-grid; }
+.header-grid { grid-area: header-grid; }
+.main-grid { grid-area: main-grid; }
+.footer-grid { grid-area: footer-grid; }
+
+aside {
+    display: none;
+}

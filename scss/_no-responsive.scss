@@ -1,0 +1,472 @@
+@media screen and (min-width: 768px){
+
+    .grid-container {  
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 0.05fr 0.01fr 1fr 0.4fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "nav-grid nav-grid nav-grid"
+          "header-grid header-grid header-grid"
+          "main-grid main-grid aside-grid"
+          "footer-grid footer-grid footer-grid";
+    }
+
+    .nav-grid { grid-area: nav-grid; }
+    .header-grid { grid-area: header-grid; }
+    .main-grid { grid-area: main-grid; }
+    .aside-grid { grid-area: aside-grid; }
+    .footer-grid { grid-area: footer-grid; }
+
+
+    /* Inicio Css Nav */
+ 
+    .navbar-expand-md .navbar-collapse {
+        justify-content: flex-end;
+    }
+
+    .home-nav {
+        position: sticky;
+        top: 0px;
+    }
+
+    .iconos-nav-bar {
+        padding-right: 10px;
+    }
+
+    .home-nav-lista {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #5865B0;
+        height: 40px;
+        
+        border-style: solid;
+        border-width: 2px;
+        padding: 2px;
+        border-color: #ffffffbe;
+        margin: 0;
+
+        li {
+            display: inline;
+            margin: 0 5px;
+
+            transition: all 0.2s ease-out;
+
+        }
+    }
+
+    .home-nav-lista:hover li {
+        background: #6d7cd38a;
+        border-radius: 10px;
+        box-shadow: 0 1px 2.4px #5d636675, 0 2px 6px #5d939d4f, 0 2px 15px #adbfdd66
+    }
+
+
+    .login-register {   
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+
+    /* Final Css Nav */
+
+    /* Inicio Css Header */
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .index-title {
+        margin: 15px 0;
+        display: flex;
+        justify-content: center;
+
+        -webkit-animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                animation: scale-in-ver-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    @-webkit-keyframes scale-in-ver-center {
+        0% {
+            -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+            opacity: 1;
+        }
+    }
+    
+    @keyframes scale-in-ver-center {
+        0% {
+        -webkit-transform: scaleY(0);
+                transform: scaleY(0);
+        opacity: 1;
+        }
+
+        100% {
+        -webkit-transform: scaleY(1);
+                transform: scaleY(1);
+        opacity: 1;
+        }
+    }
+    
+    .tabla-header {
+        display: inline-block;
+        border: solid #ffffffbe;
+        border-radius: 10px;
+        border-width: 2px;  
+        padding: 8px; 
+    }
+
+    .tabla-perfil {
+        display: inline-block;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+    }
+    
+    .header-data {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    /* Final Css Header */
+    
+    /* Inicio del Css del main */
+    
+    .main-index {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    aside {
+        margin-top: 40px;
+        margin-right: 8px;
+        display: flex;
+        align-items: baseline;
+        align-content: center;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .index-title {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+    
+    .main {
+        display: inline-block;
+        text-align: left;
+    }
+    
+    .main-titulo {
+        font-size: 40px;
+        border-style: solid;
+        border-color: #ffffffbe;
+    
+        display: inline-block;
+        padding: 10px;
+        padding-right: 20px;
+    }
+
+    .icono-coding{
+        padding-top: 0;
+    }
+    
+    .main-contenido {
+        display: inline-block;
+        border: #ffffffbe;
+        border-style: solid;
+        margin-left: 3px;
+        padding-bottom: 10px;
+        padding-right: 30px;
+        padding-left: 15px;
+    }
+    
+    /* CSS ASIDE  */
+
+    .perfil {
+        padding-left: 10px;
+    }
+
+    .tabla-perfil {
+        font-weight: bold;
+        text-align: center;
+        border-style: solid;
+        border-color: #ffffffbe;
+        border-radius: 12px;
+    }
+    
+    .user-photo {
+        font-size: 18px;
+        font-weight: bold;
+        display: flex;
+        justify-content: left;
+    
+        padding-left: 20px;
+        padding-top: 10px;
+    }
+    
+    .perfil-caracteristicas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .user-photo span {
+        display: flex;
+        align-self: center;
+    }
+    
+    .numero-reputacion {
+        color: lawngreen;
+        font-weight: 900;
+    }
+    
+    .reputacion {
+        font-weight: 600;
+    }
+    
+    .numero-likes {
+        color: lawngreen;
+        font-weight: 900;
+    }
+    
+    .likes {
+        font-weight: 600;
+    }
+    
+    .anuncios {
+        text-align: left;
+    }
+    
+    #titulo-anuncios {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .admin-annoucenments {
+        margin-top: 10px; 
+    }
+
+    .admin-annoucenments p {
+        padding: 5px;
+    }
+    
+    .icono-coding {
+        height: 50px;
+    }
+    
+    .icono-coding-secundario {
+        height: 40px;
+    }
+    
+    .icono-coding-terciario {
+        top: 12px;
+        height: 38px;
+    }
+    
+    /* Final del CSS del main */
+    
+    /* Inicio Footer */
+
+    .footer-grid {
+        margin-top: 30px;
+    }
+
+    .about-us {
+        display: inline-block;
+        padding-right: 20px;
+    }
+
+    .titulo-footer-aboutUs {
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        margin-bottom: 5px;
+
+        -webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+
+    @-webkit-keyframes tracking-in-expand {
+        0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+        }
+        40% {
+        opacity: 0.6;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+
+    @keyframes tracking-in-expand {
+        0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+        }
+        40% {
+        opacity: 0.6;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+    
+    .texto-footer-aboutUs {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        margin-bottom: 18px;
+    }
+
+    .navegacion-footer {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        flex-direction: row;
+        align-items: baseline;
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    .flex-listas-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-around;
+
+        padding: 0 20px;
+    }
+
+    .footer-list {
+        padding: 10px;
+    }
+    
+    /* Final Css Footer index */
+    
+    /* Inicio Searcher */
+    
+    .searcher-form {
+        margin-left: 25px;
+    }
+    
+    .searcher-title {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .main-searcher {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 20px;
+        margin-left: 25px;
+        align-content: space-around;
+        align-items: stretch;
+    }   
+
+    /* final css search */
+
+    /* Inicio CSS Help */
+
+    .forum-help-subtitle {
+        text-align: left;
+        margin-left: 25px;
+    }
+
+    .main-help {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+
+        margin-top: 10px;
+    }
+
+    .lista-help {
+        text-align: left;
+        margin-top: 15px;
+        margin-left: 25px;
+        padding: 0px 15px;
+        display: flex;
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    /* Inicio css general rules */
+    
+    .list-general-rules {
+        padding-left: 20;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        ol {
+            padding: 22px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+
+            li {
+                padding: 5px 0; 
+            }
+        }
+    }
+    /* Final general rules */
+    
+    /* inicio login */
+    
+    .main-login {
+        margin-top: 15px;
+        margin-left: 25px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        p {
+            padding-left: 10px;
+        }
+    }
+    
+    .form-login-register {
+        margin-left: 25px;
+    }
+
+    /* Final css Login */
+
+    /* Inicio CSS register */
+
+    .main-register {
+        margin-top: 15px;
+        margin-left: 25px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    /* Final CSS Register */
+}

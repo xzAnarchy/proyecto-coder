@@ -1,0 +1,31 @@
+/* Inicio css general rules */
+
+.accordion-button {
+    background-color: $color-background-nav !important;  
+    color: $color-primary !important;
+    font-weight: bold;
+}
+
+
+.accordion-item {
+    background-color: $color-background-nav !important;
+}
+  
+.list-general-rules {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    ol {
+        margin-left: 25px;
+        padding: 22px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+        li {
+            padding: 5px 0;
+        }
+    }
+}
+/* Final general rules */
