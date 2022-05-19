@@ -1,0 +1,44 @@
+// Aqui voy a empezar a hacer el mapa si no acabo con mi vida antes
+$redes: (
+    twitter: #00bbff,
+    Instagram: #ff00aa,
+    github: #ff0000,
+);
+
+@each $red, $color in $redes {
+    .red-#{$red} {
+        color: $color;
+    }
+}
+// Mapa terminado
+
+//Aqui le doy un poco de estilos a la lista y depsues procedo a trabajar con el extend
+
+.js-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+// Trabajando con Extend 
+
+.js-title {
+    margin: 25px 0;
+}
+
+.js-subtitle {
+    @extend .js-title;
+    padding: 10px 0;
+    
+}
+
+//Aqui meto Mixins
+@mixin size ($alto, $ancho, $espaciado) {
+    height: $alto;
+    width: $ancho;
+    margin: $espaciado;
+    
+}
+
+.div-mixin {
+    @include size(100%, 100% , 20px 0px )
+}

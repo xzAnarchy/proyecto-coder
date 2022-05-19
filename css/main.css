@@ -224,6 +224,30 @@ aside {
   align-items: center;
   justify-content: space-around; }
 
+.red-twitter {
+  color: #00bbff; }
+
+.red-Instagram {
+  color: #ff00aa; }
+
+.red-github {
+  color: #ff0000; }
+
+.js-list {
+  list-style-type: none;
+  padding: 0; }
+
+.js-title, .js-subtitle {
+  margin: 25px 0; }
+
+.js-subtitle {
+  padding: 10px 0; }
+
+.div-mixin {
+  height: 100%;
+  width: 100%;
+  margin: 20px 0px; }
+
 @media screen and (min-width: 768px) {
   .grid-container {
     display: grid;
