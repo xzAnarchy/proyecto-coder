@@ -22,7 +22,7 @@ $redes: (
 // Trabajando con Extend 
 
 .js-title {
-    margin: 25px 0;
+    margin: 15+10px 0;
 }
 
 .js-subtitle {
@@ -40,5 +40,5 @@ $redes: (
 }
 
 .div-mixin {
-    @include size(100%, 100% , 20px 0px )
+    @include size(100%, 100% , 10 * 2px 0px )
 }
